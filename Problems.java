@@ -52,11 +52,9 @@ public class Problems {
     }
     public static String Problem7(String word, int n) {
         String newWord = "";
-        if(n > 0) {
-            newWord = word;
-            for (int i = 1; i < n; i++)
+        for (int i = 0; i < n; i++) {
                 newWord += word;
-        }
+            }
         return newWord;
     }
     public static String Problem8(String firstName, String lastName) {
@@ -66,10 +64,7 @@ public class Problems {
         int total = 0;
         for (int num : myArray)
             total += num;
-        if (total > 100)
-            return true;
-        else
-            return false;
+        return total > 100;
     }
     public static double Problem10(double[] myArray) {
         double total = 0;
@@ -98,6 +93,10 @@ public class Problems {
         return false;
     }
     public static void storeAddresses() {
+        //This program stores addresses after asking for user input
+        /*I made this because it sounded like a fairly simple and interesting thing to make,
+         and I couldn't think of anything at all that made sense to make
+         that wasn't super complicated.*/
         Scanner in = new Scanner(System.in);
         List<String> addresses = new ArrayList<>();
         while(true) {
