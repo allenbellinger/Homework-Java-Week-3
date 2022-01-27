@@ -1,2 +1,2 @@
-# Homework-Week-3
+# Homework-Java-Week-3
 Java homework assignment for week 3 promineo
